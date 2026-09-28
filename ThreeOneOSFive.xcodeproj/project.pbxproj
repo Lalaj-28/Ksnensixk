@@ -71,22 +71,19 @@
 		3105K201 /* LicenseActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105K101; };
 		3105A211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3105A031; };
 		3105P201 /* OGIOS File (6).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P101; };
-	3105P202 /* OGIOS File (7).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P102; };
+		3105P202 /* OGIOS File (7).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P102; };
 		3105P209 /* OGIOS File (9).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P109; };
-		3105P208 /* OGIOS File (10).3105 */ = {isa = PBXBuildFile; fileRef = 3105P108; };
-		3105P210 /* OGIOS File (1).3105 */ = {isa = PBXBuildFile; fileRef = 3105P110; };
-					3105P211 /* OGIOS File (3).3105 */ = {isa = PBXBuildFile; fileRef = 3105P111; };
-			3105P213 /* OGIOS File (5).3105 */ = {isa = PBXBuildFile; fileRef = 3105P113; };
-			3105P214 /* OGIOS File (12).3105 */ = {isa = PBXBuildFile; fileRef = 3105P114; };
-			3105P215 /* OGIOS File (8).3105 */ = {isa = PBXBuildFile; fileRef = 3105P115; };
-			3105P216 /* OGIOS File (11).3105 */ = {isa = PBXBuildFile; fileRef = 3105P116; };
-			3105P217 /* OGIOS File (4).3105 */ = {isa = PBXBuildFile; fileRef = 3105P117; };
-			3105P218 /* OGIOS File (2).3105 */ = {isa = PBXBuildFile; fileRef = 3105P118; };
-
+		3105P208 /* OGIOS File (10).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P108; };
+		3105P210 /* OGIOS File (1).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P110; };
+		3105P211 /* OGIOS File (3).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P111; };
+		3105P213 /* OGIOS File (5).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P113; };
+		3105P214 /* OGIOS File (12).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P114; };
+		3105P215 /* OGIOS File (8).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P115; };
+		3105P216 /* OGIOS File (11).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P116; };
+		3105P217 /* OGIOS File (4).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P117; };
+		3105P218 /* OGIOS File (2).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P118; };
 		3105P219 /* OGIOS File (13).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P119; };
-
 		3105P220 /* OGIOS File (14).3105 in Resources */ = {isa = PBXBuildFile; fileRef = 3105P120; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,25 +167,22 @@
 		3105I101 /* FilesTabSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTabSwitcherView.swift; sourceTree = "<group>"; };
 		3105A121 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3105A122 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
-3105A123 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3105A123 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3105B123 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		3105P101 /* OGIOS File (6).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThreeOneOSFive/Patches/OGIOS File (6).3105; sourceTree = "<group>"; };
-	3105P102 /* OGIOS File (7).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThreeOneOSFive/Patches/OGIOS File (7).3105; sourceTree = "<group>"; };
-		3105P109 /* OGIOS File (9).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThreeOneOSFive/Patches/OGIOS File (9).3105; sourceTree = "<group>"; };
-		3105P108 /* OGIOS File (10).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThreeOneOSFive/Patches/OGIOS File (10).3105; sourceTree = "<group>"; };
+		3105P101 /* OGIOS File (6).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (6).3105"; sourceTree = "<group>"; };
+		3105P102 /* OGIOS File (7).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (7).3105"; sourceTree = "<group>"; };
+		3105P109 /* OGIOS File (9).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (9).3105"; sourceTree = "<group>"; };
+		3105P108 /* OGIOS File (10).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (10).3105"; sourceTree = "<group>"; };
 		3105P110 /* OGIOS File (1).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (1).3105"; sourceTree = "<group>"; };
-					3105P111 /* OGIOS File (3).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (3).3105"; sourceTree = "<group>"; };
-			3105P113 /* OGIOS File (5).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (5).3105"; sourceTree = "<group>"; };
-			3105P114 /* OGIOS File (12).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (12).3105"; sourceTree = "<group>"; };
-			3105P115 /* OGIOS File (8).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (8).3105"; sourceTree = "<group>"; };
-			3105P116 /* OGIOS File (11).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (11).3105"; sourceTree = "<group>"; };
-			3105P117 /* OGIOS File (4).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (4).3105"; sourceTree = "<group>"; };
-			3105P118 /* OGIOS File (2).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (2).3105"; sourceTree = "<group>"; };
-
+		3105P111 /* OGIOS File (3).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (3).3105"; sourceTree = "<group>"; };
+		3105P113 /* OGIOS File (5).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (5).3105"; sourceTree = "<group>"; };
+		3105P114 /* OGIOS File (12).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (12).3105"; sourceTree = "<group>"; };
+		3105P115 /* OGIOS File (8).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (8).3105"; sourceTree = "<group>"; };
+		3105P116 /* OGIOS File (11).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (11).3105"; sourceTree = "<group>"; };
+		3105P117 /* OGIOS File (4).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (4).3105"; sourceTree = "<group>"; };
+		3105P118 /* OGIOS File (2).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (2).3105"; sourceTree = "<group>"; };
 		3105P119 /* OGIOS File (13).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (13).3105"; sourceTree = "<group>"; };
-
 		3105P120 /* OGIOS File (14).3105 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ThreeOneOSFive/Patches/OGIOS File (14).3105"; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,10 +291,10 @@
 				3105F102 /* WallpaperLabModels.swift */,
 				3105F103 /* SecureZIPArchive.swift */,
 				3105F104 /* WallpaperInstaller.swift */,
-					3105F105 /* WallpaperLabService.swift */,
-					3105K100 /* LicenseManager.swift */,
-					3105K101 /* LicenseActivationView.swift */,
-					3105A106 /* AppIconHelper.m */,
+				3105F105 /* WallpaperLabService.swift */,
+				3105K100 /* LicenseManager.swift */,
+				3105K101 /* LicenseActivationView.swift */,
+				3105A106 /* AppIconHelper.m */,
 				3105A107 /* AppIconHelper.h */,
 				3105A202 /* KernelExploit.swift */,
 				3105J201 /* AntiDetection.m */,
@@ -394,10 +388,10 @@
 				3105A228,
 				3105P201,
 				3105P202,
-					3105P209,
-					3105P208,
-					3105P210,
-					3105P211,
+				3105P209,
+				3105P208,
+				3105P210,
+				3105P211,
 				3105P213,
 				3105P214,
 				3105P215,
@@ -434,10 +428,10 @@
 				3105J204,
 				3105J206,
 				3105A240,
-					3105A241,
-					3105K200,
-					3105K201,
-					3105B214,
+				3105A241,
+				3105K200,
+				3105K201,
+				3105B214,
 				3105B215,
 				3105B216,
 				3105B217,
@@ -626,7 +620,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_ENABLE_OBJC_WEAK =YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -644,7 +638,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_STRICT_PROTUNES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -656,7 +650,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION =YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -664,36 +658,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
+				MTL_FAST_MATH =YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3105A600 /* Build configuration list for PBXNativeTarget "OGIOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3105A601 /* Debug */,
-				3105A602 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3105AA00 /* Build configuration list for PBXProject "ThreeOneOSFive" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3105AA01 /* Debug */,
-				3105AA02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 	};
 	rootObject = 3105A900;
 }
-
