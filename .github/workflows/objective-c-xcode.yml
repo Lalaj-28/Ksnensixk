@@ -1,8 +1,10 @@
-name: Build Xcode Project
+name: Build OGIOS
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -10,22 +12,40 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: latest
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '26.6'
 
-    - name: Make scripts executable
-      run: chmod +x build_unsigned.sh build_esign_ready_ipa.sh
+      - name: Show build environment
+        run: |
+          xcodebuild -version
+          xcodebuild -showsdks
+          swift --version
 
-    - name: Run build script
-      run: ./build_unsigned.sh
+      - name: Make scripts executable
+        run: |
+          chmod +x build_unsigned.sh
+          chmod +x build_esign_ready_ipa.sh
 
-    - name: Upload IPA Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Telenka-Unsigned-IPA
-        path: build/*.ipa
+      - name: Run build script
+        run: ./build_unsigned.sh
+
+      - name: Upload IPA Artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Telenka-Unsigned-IPA
+          path: build/*.ipa
+          if-no-files-found: error
+
+      - name: Upload Build Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Xcode-Build-Log
+          path: build/xcodebuild.log
+          if-no-files-found: warn
