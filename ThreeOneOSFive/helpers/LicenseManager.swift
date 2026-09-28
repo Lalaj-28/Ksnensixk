@@ -4,7 +4,7 @@ import Security
 
 @MainActor
 final class LicenseManager: ObservableObject {
-    static let accessKey = "OGIOS"
+    static let accessKey = "KSENSI-11"
 
     @Published private(set) var expirationDate: Date?
     @Published private(set) var isActive = false
@@ -37,7 +37,7 @@ final class LicenseManager: ObservableObject {
         }
         lastAttemptAt = Date()
         isBusy = true
-        message = "Checking access key…"
+        message = "Verifying key on this device…"
 
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
