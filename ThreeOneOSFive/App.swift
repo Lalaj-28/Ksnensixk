@@ -88,32 +88,35 @@ class AppState: ObservableObject {
         )
     }
 
-    var isAppCompatible: Bool {
-        let version = AppInfo.versionTuple
-        return IOSCompatibilityPolicy.isAppCompatible(
-            major: version.major,
-            minor: version.minor,
-            patch: version.patch
-        )
-    }
+    var isSupported: Bool { unsupportedMessage == nil }
 
     func detectSupport() {
+        let v = AppInfo.versionTuple
+        let supported = ExploitSupportPolicy.isSupported(
+            major: v.major,
+            minor: v.minor,
+            patch: v.patch,
+            build: AppInfo.osBuild
+        )
 #if targetEnvironment(simulator)
         if ProcessInfo.processInfo.arguments.contains("--simulate-access") {
             exploitStatus = .success(method: "Simulator preview")
         }
 #endif
 
-        unsupportedMessage = isAppCompatible ? nil : "Requires iOS \(IOSCompatibilityPolicy.minimumAppVersion) or later"
+        unsupportedMessage = supported ? nil : "iOS \(AppInfo.osVersion) (\(AppInfo.osBuild))"
         if let unsupportedMessage {
             exploitStatus = .unsupported(unsupportedMessage)
             return
         }
 
-        guard kernelExploitApplicable else {
-            exploitStatus = .unsupported("Kernel exploit is not verified for iOS \(AppInfo.osVersion) (\(AppInfo.osBuild))")
-            return
-        }
+        let applicable = KernelExploit.isApplicable(
+            major: v.major,
+            minor: v.minor,
+            patch: v.patch,
+            build: AppInfo.osBuild
+        )
+        guard applicable else { return }
 
         refreshKernelExploitStatus()
         maybeAutoRunKernelExploit()
@@ -148,10 +151,6 @@ class AppState: ObservableObject {
     }
 
     func runKernelExploitIfNeeded() {
-        guard kernelExploitApplicable else {
-            exploitStatus = .unsupported("Kernel exploit is not verified for iOS \(AppInfo.osVersion) (\(AppInfo.osBuild))")
-            return
-        }
         refreshKernelExploitStatus()
         guard !kernelExploitRunning,
               !exploitStatus.isSuccess,

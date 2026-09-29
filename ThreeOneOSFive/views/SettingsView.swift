@@ -40,15 +40,8 @@ struct SettingsView: View {
                     HStack {
                         Text(language.text("settings.current_version"))
                         Spacer()
-                        Text(language.text(appState.isAppCompatible ? "settings.app_compatible" : "settings.app_incompatible"))
-                            .foregroundStyle(appState.isAppCompatible ? Color.green : Color.red)
-                    }
-                    LabeledContent(language.text("settings.app_minimum"), value: "iOS \(IOSCompatibilityPolicy.minimumAppVersion)+")
-                    HStack {
-                        Text(language.text("settings.exploit_status"))
-                        Spacer()
-                        Text(language.text(appState.kernelExploitApplicable ? "settings.exploit_verified" : "settings.exploit_unverified"))
-                            .foregroundStyle(appState.kernelExploitApplicable ? Color.green : Color.orange)
+                        Text(language.text(appState.isSupported ? "settings.supported" : "settings.unsupported"))
+                        .foregroundStyle(appState.isSupported ? Color.green : Color.red)
                     }
                     LabeledContent("iOS 17", value: ExploitSupportPolicy.verifiedIOS17Range)
                     LabeledContent("iOS 18", value: ExploitSupportPolicy.verifiedIOS18Range)

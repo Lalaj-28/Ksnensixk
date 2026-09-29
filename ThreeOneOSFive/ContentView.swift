@@ -90,8 +90,7 @@ struct ContentView: View {
             panelTitle("DEVICE STATUS", icon: "shield.lefthalf.filled")
             statusRow(icon: "apple.logo", title: "iOS", value: AppInfo.osVersion, color: AppTheme.secondaryAccent)
             statusRow(icon: "iphone", title: "Device", value: AppInfo.displayMachineName, color: AppTheme.secondaryAccent)
-            statusRow(icon: "checkmark.seal.fill", title: "App", value: appState.isAppCompatible ? "iOS 16+" : "UNSUPPORTED", color: appState.isAppCompatible ? .green : .red)
-            statusRow(icon: "bolt.fill", title: "Kernel exploit", value: appState.kernelExploitApplicable ? "VERIFIED" : "NOT VERIFIED", color: appState.kernelExploitApplicable ? .green : .orange)
+            statusRow(icon: "checkmark.seal.fill", title: "Support", value: appState.isSupported ? "SUPPORTED" : "UNSUPPORTED", color: appState.isSupported ? .green : .red)
         }
         .padding(16)
         .background(Color.black.opacity(0.42), in: RoundedRectangle(cornerRadius: 24, style: .continuous))

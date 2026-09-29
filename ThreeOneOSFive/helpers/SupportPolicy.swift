@@ -1,14 +1,5 @@
 import Foundation
 
-enum IOSCompatibilityPolicy {
-    static let minimumAppVersion = "16.0"
-    static let minimumAppMajorVersion = 16
-
-    static func isAppCompatible(major: Int, minor: Int, patch: Int) -> Bool {
-        return major >= minimumAppMajorVersion && minor >= 0 && patch >= 0
-    }
-}
-
 enum ExploitSupportPolicy {
     static let verifiedIOS17Range = "17.0–17.7.x"
     static let verifiedIOS18Range = "18.0–18.7.1"
