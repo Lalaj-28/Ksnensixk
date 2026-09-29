@@ -17,14 +17,10 @@
 تم استبدال التحقق الشبكي بمدير تفعيل محلي داخل `helpers/LicenseManager.swift`. لا يحتاج التطبيق إلى API server لتفعيل الترخيص، والمفتاح المقبول هو:
 
 ```text
-KSENSI-11
+OGIOS
 ```
 
 يحفظ التفعيل في Keychain على الجهاز، ويمكن إزالة التفعيل من داخل التطبيق عبر `deactivate()`.
-
-## توافق iOS
-
-الحد الأدنى لإصدار iOS في مشروع Xcode هو 16.0. واجهة التطبيق تستهدف iOS 16 فما بعد، لكن توافق الـkernel exploit منفصل ويظل محصورًا بالإصدارات والبِنى المتحقق منها في `ThreeOneOSFive/helpers/SupportPolicy.swift`. iOS 16 ليس ضمن نطاق الـexploit المتحقق منه، لذلك لن يحاول التطبيق تشغيله هناك.
 
 ## البناء
 
@@ -34,4 +30,4 @@ KSENSI-11
 ./build_unsigned.sh
 ```
 
-ثم استخدام GitHub Actions من خلال Workflow البناء الموجود في `.github/workflows/objective-c-xcode.yml`.
+ثم استخدام GitHub Actions من خلال Workflow البناء الموجود في `.github/workflows/build.yml`.
